@@ -1,0 +1,163 @@
+// Paleta de Cores
+$cor-primaria: #16A34A; // Verde (Cor / Contorno - Botão)
+$cor-secundaria: #2563EB; // Azul (Cor - Circulo com Nº e Botão Adquirir)
+$cor-neutra-fundo: #F0FDF4; // Branco (Fundo Geral - corpo texto botões)
+$cor-fundo-caixas: #F3F5F8; // Fundo das Caixas (Ex: Cards - azul claro)
+$cor-titulo: #1F2937; // Cinza Escuro (Título / Cor corpo Texto Principal)
+$cor-texto: #4B5563; // Preto (Texto menor dentro dos cards)
+$cor-subtitulo: #4B5563; // Cinza (Subtítulo / Texto Secundário)
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: $cor-subtitulo;
+}
+
+button {
+    border: none;
+}
+
+// Mobile-first - HEADER SECTION
+body {
+    padding: 0 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $cor-subtitulo;
+    padding: 30px 0 10px 0;
+
+    img {
+        width: 200px;
+    }
+
+    .header__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+
+        .link-navigation {
+            display: flex;
+            gap: 10px;
+
+            a {
+                color: $cor-texto;
+            }
+        }
+
+        .start-now-button {
+            padding: 15px 10px;
+            background-color: $cor-primaria;
+            border-radius: 6px;
+            color: $cor-neutra-fundo;
+        }
+    }
+}
+
+// ---------------------------------------
+
+// Mobile-first - HERO SECTION
+.hero {
+    // Alinhamento principal (alinhando em coluna- column para mobile e linha -row para desktop)
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .hero-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o texto e botões */
+
+        h1 {
+            color: $cor-titulo;
+            margin-top: 20px;
+            width: 678;
+            height: 139;
+            font-style: Bold;
+            font-size: 2rem;
+            text-align: center;
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+            line-height: 130%;
+
+        }
+
+        p {
+            color: #4B5563;
+            margin-top: 10px;
+            text-align: center;
+            max-width: 80%; /* Limitando a largura do texto para melhor leitura */
+            margin-bottom: 15px;
+        }
+    }
+    
+    // Contêiner de Botões: Usa Flexbox para alinhamento horizontal
+    .container__hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    // Imagem da Seção
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px; /* Espaço entre botões e imagem */
+
+        img {
+            width: 70%;
+            max-width: 350px; /* Limita o tamanho da imagem em telas maiores */
+        }
+    }
+}
+
+// -------------------------------------
+
+
+// Botões quero doar / adquirir
+button { 
+    width: 150px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Transição para o hover */
+}
+
+// 1. Botão Primário (Cor Verde: Doar)
+.btn-primario {
+    background-color: $cor-primaria;
+    color: $cor-neutra-fundo;
+    border: none;
+
+    &:hover {
+        background-color: darken($cor-primaria, 10%); /* Escurece 10% no hover */
+    }
+}
+
+// 2. Botão Secundário (Cor Azul: Adquirir)
+.btn-secundario {
+    background-color: $cor-neutra-fundo;
+    color: $cor-secundaria; 
+    border: 1px solid $cor-secundaria; /* Borda da cor secundária */
+
+    &:hover {
+        background-color: lighten($cor-secundaria, 40%); /* Fundo levemente azul no hover */
+    }
+}
+
+// -------------------------------------

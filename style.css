@@ -1,1 +1,126 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #4B5563;
+}
+
+button {
+  border: none;
+}
+
+body {
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #4B5563;
+  padding: 30px 0 10px 0;
+}
+.header img {
+  width: 200px;
+}
+.header .header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.header .header__navbar .link-navigation {
+  display: flex;
+  gap: 10px;
+}
+.header .header__navbar .link-navigation a {
+  color: #4B5563;
+}
+.header .header__navbar .start-now-button {
+  padding: 15px 10px;
+  background-color: #16A34A;
+  border-radius: 6px;
+  color: #F0FDF4;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .hero-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o texto e botões */
+}
+.hero .hero-top h1 {
+  color: #1F2937;
+  margin-top: 20px;
+  width: 678;
+  height: 139;
+  font-style: Bold;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+}
+.hero .hero-top p {
+  color: #4B5563;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 80%; /* Limitando a largura do texto para melhor leitura */
+  margin-bottom: 15px;
+}
+.hero .container__hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.hero .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; /* Espaço entre botões e imagem */
+}
+.hero .hero-image img {
+  width: 70%;
+  max-width: 350px; /* Limita o tamanho da imagem em telas maiores */
+}
+
+button {
+  width: 150px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease; /* Transição para o hover */
+}
+
+.btn-primario {
+  background-color: #16A34A;
+  color: #F0FDF4;
+  border: none;
+}
+.btn-primario:hover {
+  background-color: rgb(15.9351351351, 118.0648648649, 53.6); /* Escurece 10% no hover */
+}
+
+.btn-secundario {
+  background-color: #F0FDF4;
+  color: #2563EB;
+  border: 1px solid #2563EB; /* Borda da cor secundária */
+}
+.btn-secundario:hover {
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429); /* Fundo levemente azul no hover */
+}/*# sourceMappingURL=style.css.map */
