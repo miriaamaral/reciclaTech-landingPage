@@ -7,6 +7,11 @@ $cor-titulo: #1F2937; // Cinza Escuro (Título / Cor corpo Texto Principal)
 $cor-texto: #4B5563; // Preto (Texto menor dentro dos cards)
 $cor-subtitulo: #4B5563; // Cinza (Subtítulo / Texto Secundário)
 
+
+// -------------------------------------------------------------------------------------------------------
+// MOBILE-FIRST - HEADER
+// -------------------------------------------------------------------------------------------------------
+
 * {
     padding: 0;
     margin: 0;
@@ -23,7 +28,6 @@ button {
     border: none;
 }
 
-// Mobile-first - HEADER SECTION
 body {
     padding: 0 10px;
 }
@@ -63,9 +67,10 @@ body {
     }
 }
 
-// ---------------------------------------
+// -------------------------------------------------------------------------------------------------------
+// MOBILE FIRTS - HERO
+// -------------------------------------------------------------------------------------------------------
 
-// Mobile-first - HERO SECTION
 .hero {
     // Alinhamento principal (alinhando em coluna- column para mobile e linha -row para desktop)
     display: flex;
@@ -75,7 +80,7 @@ body {
     .hero-top {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza o texto e botões */
+        align-items: center; //Centraliza o texto e botões
 
         h1 {
             color: $cor-titulo;
@@ -88,14 +93,13 @@ body {
             font-family: Poppins, sans-serif;
             font-weight: 700;
             line-height: 130%;
-
         }
 
         p {
             color: #4B5563;
             margin-top: 10px;
             text-align: center;
-            max-width: 80%; /* Limitando a largura do texto para melhor leitura */
+            max-width: 80%; // Limitando a largura do texto para melhor leitura
             margin-bottom: 15px;
         }
     }
@@ -113,51 +117,112 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px; /* Espaço entre botões e imagem */
+        margin-top: 30px; // Espaço entre botões e imagem
 
         img {
             width: 70%;
-            max-width: 350px; /* Limita o tamanho da imagem em telas maiores */
+            max-width: 350px; // Limita o tamanho da imagem em telas maiores
         }
     }
 }
 
-// -------------------------------------
+    // Botões quero doar / adquirir
+    button { 
+        width: 150px;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease; /* Transição para o hover */
+    }
 
-
-// Botões quero doar / adquirir
-button { 
-    width: 150px;
-    padding: 15px 10px;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-around;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: all 0.3s ease; /* Transição para o hover */
-}
-
-// 1. Botão Primário (Cor Verde: Doar)
-.btn-primario {
-    background-color: $cor-primaria;
-    color: $cor-neutra-fundo;
-    border: none;
-
-    &:hover {
+    // 1. Botão Primário (Cor Verde: Doar)
+    .btn-primario {
+        background-color: $cor-primaria;
+        color: $cor-neutra-fundo;
+        border: none;
+        
+        &:hover {    
         background-color: darken($cor-primaria, 10%); /* Escurece 10% no hover */
     }
 }
 
-// 2. Botão Secundário (Cor Azul: Adquirir)
-.btn-secundario {
-    background-color: $cor-neutra-fundo;
-    color: $cor-secundaria; 
-    border: 1px solid $cor-secundaria; /* Borda da cor secundária */
+    // 2. Botão Secundário (Cor Azul: Adquirir)
+    .btn-secundario {
+        background-color: $cor-neutra-fundo;
+        color: $cor-secundaria; 
+        border: 1px solid $cor-secundaria; /* Borda da cor secundária */
+        
+        &:hover {
+            background-color: lighten($cor-secundaria, 40%); /* Fundo levemente azul no hover */
+        }
+    }
+    
 
-    &:hover {
-        background-color: lighten($cor-secundaria, 40%); /* Fundo levemente azul no hover */
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------
+//
+//
+//                                      @MEDIA  SCREEN  DESKTOP
+//                  Estilos para telas maiores que 768px (tablets e desktops)
+//
+//
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - HEADER
+// -------------------------------------------------------------------------------------------------------
+
+@media (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1106px;
+        margin: auto;
+
+        img {
+            height: 100%;
+        }
+
+        .header__navbar {
+            justify-content: flex-end;
+            gap: 20px;
+        }
     }
 }
 
-// -------------------------------------
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - HERO
+// -------------------------------------------------------------------------------------------------------
+@media (min-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1106px;
+        margin: auto;
+        
+
+        .hero-image {
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+}

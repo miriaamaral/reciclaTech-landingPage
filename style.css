@@ -57,7 +57,7 @@ body {
 .hero .hero-top {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o texto e botões */
+  align-items: center;
 }
 .hero .hero-top h1 {
   color: #1F2937;
@@ -75,7 +75,7 @@ body {
   color: #4B5563;
   margin-top: 10px;
   text-align: center;
-  max-width: 80%; /* Limitando a largura do texto para melhor leitura */
+  max-width: 80%;
   margin-bottom: 15px;
 }
 .hero .container__hero-buttons {
@@ -88,11 +88,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; /* Espaço entre botões e imagem */
+  margin-top: 30px;
 }
 .hero .hero-image img {
   width: 70%;
-  max-width: 350px; /* Limita o tamanho da imagem em telas maiores */
+  max-width: 350px;
 }
 
 button {
@@ -123,4 +123,38 @@ button {
 }
 .btn-secundario:hover {
   background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429); /* Fundo levemente azul no hover */
+}
+
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1106px;
+    margin: auto;
+  }
+  .header img {
+    height: 100%;
+  }
+  .header .header__navbar {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1106px;
+    margin: auto;
+  }
+  .hero .hero-image {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .hero img {
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
