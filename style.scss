@@ -289,11 +289,16 @@ h2, p {
         justify-content: center;
     }
 
+    h2{
+        font-size: 2rem;
+    }
+
     .public-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    width: 100%;
     }
     
 
@@ -324,6 +329,7 @@ h2, p {
                 text-align: start;
                 margin-inline-start: 40px;
                 margin-top: -35px;
+                justify-content: left;
             }
 
         .p-formatacao {
@@ -394,6 +400,7 @@ h2, p {
                 text-align: start;
                 margin-inline-start: 40px;
                 margin-top: -35px;
+                justify-content: left;
             }
 
         .p-formatacao {
