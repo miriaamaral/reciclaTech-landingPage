@@ -8,8 +8,35 @@ $cor-texto: #4B5563; // Preto (Texto menor dentro dos cards)
 $cor-subtitulo: #4B5563; // Cinza (Subtítulo / Texto Secundário)
 
 
+// Fontes e tamanhos
+p , a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+}
+
+
 // -------------------------------------------------------------------------------------------------------
-// MOBILE-FIRST - HEADER
+// MOBILE-FIRST - HEADER min-375px
 // -------------------------------------------------------------------------------------------------------
 
 * {
@@ -21,11 +48,21 @@ $cor-subtitulo: #4B5563; // Cinza (Subtítulo / Texto Secundário)
 }
 
 a {
+    font-size: small;
+    font-weight: 600;
+    transition: all 0.3s ease; // Transição para o hover
     color: $cor-subtitulo;
+
+        transition: all 0.3s ease; //Transição para o hover
+
+        &:hover {    
+        color: $cor-primaria; // Muda a cor para a cor primária no hover
+    }
 }
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 body {
@@ -52,23 +89,29 @@ body {
         .link-navigation {
             display: flex;
             gap: 10px;
-
-            a {
-                color: $cor-texto;
-            }
+            font-size: 16px;
         }
 
         .start-now-button {
+            display: flex;
+            flex-wrap: wrap;
+            width: 120px;
             padding: 15px 10px;
             background-color: $cor-primaria;
             border-radius: 6px;
             color: $cor-neutra-fundo;
+
+            transition: all 0.3s ease; /* Transição para o hover */
+
+            &:hover {    
+            background-color: darken($cor-primaria, 10%); /* Escurece 10% no hover */
         }
     }
 }
+}
 
 // -------------------------------------------------------------------------------------------------------
-// MOBILE FIRTS - HERO
+// MOBILE FIRTS - HERO min-375px
 // -------------------------------------------------------------------------------------------------------
 
 .hero {
@@ -162,8 +205,81 @@ body {
     }
     
 
+// -------------------------------------------------------------------------------------------------------
+// MOBILE FIRTS - CONTAINER METRICAS min-375px
+// -------------------------------------------------------------------------------------------------------
+
+.container__metrics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 5px;
+    gap: 10px;
 
 
+
+
+    background-color: $cor-fundo-caixas;
+    
+    .eletronicosDoados {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: $cor-primaria;
+            font-size: 2rem;
+            font-weight: bold;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        p {
+            color: $cor-texto;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+    .familiasBeneficiadas {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: $cor-primaria;
+            font-size: 2rem;
+            font-weight: bold;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        p {
+            color: $cor-texto;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+    .satisfacaoUsuarios {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: $cor-primaria;
+            font-size: 2rem;
+            font-weight: bold;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        p {
+            color: $cor-texto;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
 
 
 
@@ -176,11 +292,11 @@ body {
 //
 //
 //                                      @MEDIA  SCREEN  DESKTOP
-//                  Estilos para telas maiores que 768px (tablets e desktops)
+//                  Estilos para telas maiores que 1024px (notebooks e desktops)
 //
 //
 // -------------------------------------------------------------------------------------------------------
-// DESKTOP - HEADER
+// DESKTOP - HEADER min-1024px
 // -------------------------------------------------------------------------------------------------------
 
 @media (min-width: 1024px) {
@@ -203,10 +319,11 @@ body {
 }
 
 // -------------------------------------------------------------------------------------------------------
-// DESKTOP - HERO
+// DESKTOP - HERO min-1024px
 // -------------------------------------------------------------------------------------------------------
 @media (min-width: 1024px) {
     .hero {
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -225,4 +342,16 @@ body {
         }
     }
 
+}
+
+
+// -------------------------------------------------------------------------------------------------------
+// MOBILE FIRTS - CONTAINER METRICS min-1024px
+// -------------------------------------------------------------------------------------------------------
+@media (min-width: 1024px) {
+    .container__metrics {
+        margin-top: 30px;
+        padding: 15px;
+        gap: 50px;
+    }
 }
