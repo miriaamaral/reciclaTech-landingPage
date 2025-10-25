@@ -391,6 +391,11 @@ h2 {
 }
 .produtos .produtos__h2-p h2 {
   color: #1F2937;
+  font-size: 1.9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .produtos .container__produtos {
   display: flex;

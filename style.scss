@@ -484,20 +484,26 @@ h2 {
 
     .produtos__h2-p {
         align-items: center;
+
         h2 {
             color: $cor-titulo;
+            font-size: 1.9rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
     }
 
     .container__produtos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-items: center;
-    padding: 15px;
-    margin: 20px;
-    gap: 20px;
-    background-color: $cor-fundo-caixas;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-items: center;
+        padding: 15px;
+        margin: 20px;
+        gap: 20px;
+        background-color: $cor-fundo-caixas;
     }
 
     // FRAME FONE DE OUVIDO
@@ -518,17 +524,18 @@ h2 {
             align-items: center;
             justify-items: center;
         }
+
         p {
             font-size: 0.85rem;
             text-align: center;
             padding: 5px;
         }
-        
-        button{
+
+        button {
             background-color: $cor-primaria;
             color: $cor-neutra-fundo;
             border: none;
-            
+
             &:hover {
                 background-color: darken($cor-primaria, 10%);
             }
@@ -554,17 +561,18 @@ h2 {
             align-items: center;
             justify-items: center;
         }
+
         p {
             font-size: 0.85rem;
             text-align: center;
             padding: 5px;
         }
-        
-        button{
+
+        button {
             background-color: $cor-primaria;
             color: $cor-neutra-fundo;
             border: none;
-            
+
             &:hover {
                 background-color: darken($cor-primaria, 10%);
             }
@@ -576,7 +584,7 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
+    }
 
     .card-smartphone {
         justify-items: center;
@@ -589,17 +597,18 @@ h2 {
             align-items: center;
             justify-items: center;
         }
+
         p {
             font-size: 0.85rem;
             text-align: center;
             padding: 5px;
         }
-        
-        button{
+
+        button {
             background-color: $cor-primaria;
             color: $cor-neutra-fundo;
             border: none;
-            
+
             &:hover {
                 background-color: darken($cor-primaria, 10%);
             }
@@ -624,105 +633,105 @@ h2 {
 
 
 
-    // -------------------------------------------------------------------------------------------------------
-    //
-    //
-    //                                      @MEDIA  SCREEN  DESKTOP
-    //                  Estilos para telas maiores que 1024px (notebooks e desktops)
-    //
-    //
-    // -------------------------------------------------------------------------------------------------------
-    // DESKTOP - HEADER min-1024px
-    // -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+//
+//
+//                                      @MEDIA  SCREEN  DESKTOP
+//                  Estilos para telas maiores que 1024px (notebooks e desktops)
+//
+//
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - HEADER min-1024px
+// -------------------------------------------------------------------------------------------------------
 
-    @media (min-width: 1024px) {
-        .header {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1106px;
-            margin: auto;
+@media (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1106px;
+        margin: auto;
 
-            img {
-                height: 100%;
-            }
+        img {
+            height: 100%;
+        }
 
-            .header__navbar {
-                justify-content: flex-end;
-                gap: 20px;
-            }
+        .header__navbar {
+            justify-content: flex-end;
+            gap: 20px;
         }
     }
+}
 
-    // -------------------------------------------------------------------------------------------------------
-    // DESKTOP - HERO min-1024px
-    // -------------------------------------------------------------------------------------------------------
-    @media (min-width: 1024px) {
-        .hero {
-            margin-top: 30px;
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - HERO min-1024px
+// -------------------------------------------------------------------------------------------------------
+@media (min-width: 1024px) {
+    .hero {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1106px;
+        margin: auto;
+
+
+        .hero-image {
+            justify-content: center;
+            gap: 20px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - CONTAINER METRICS min-1024px
+// -------------------------------------------------------------------------------------------------------
+@media (min-width: 1024px) {
+    .container__metrics {
+        margin-top: 30px;
+        padding: 15px;
+        gap: 50px;
+    }
+}
+
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - CONTAINER COMO FUNCIONA min-1024px
+// -------------------------------------------------------------------------------------------------------
+@media (min-width: 1024px) {
+    .comoFunciona {
+
+        .public-box {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1106px;
-            margin: auto;
-
-
-            .hero-image {
-                justify-content: center;
-                gap: 20px;
-            }
-
-            img {
-                height: 100%;
-            }
+            justify-content: center;
+            padding: 20px;
+            gap: 35px;
         }
     }
-
-    // -------------------------------------------------------------------------------------------------------
-    // DESKTOP - CONTAINER METRICS min-1024px
-    // -------------------------------------------------------------------------------------------------------
-    @media (min-width: 1024px) {
-        .container__metrics {
-            margin-top: 30px;
-            padding: 15px;
-            gap: 50px;
-        }
-    }
-
-    // -------------------------------------------------------------------------------------------------------
-    // DESKTOP - CONTAINER COMO FUNCIONA min-1024px
-    // -------------------------------------------------------------------------------------------------------
-    @media (min-width: 1024px) {
-        .comoFunciona {
-
-            .public-box {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                padding: 20px;
-                gap: 35px;
-            }
-        }
-    }
+}
 
 // -------------------------------------------------------------------------------------------------------
 // DESKTOP - CONTAINER PRODUTOS min-1024px
 // -------------------------------------------------------------------------------------------------------
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     .produtos {
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .container__produtos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 20px;
-        margin-top: 20px;
-    }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
     }
 
     .frame__fone {
