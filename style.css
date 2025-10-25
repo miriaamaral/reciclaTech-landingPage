@@ -1,10 +1,12 @@
 @charset "UTF-8";
-p, a {
+p,
+a {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
 }
@@ -81,10 +83,12 @@ body {
   background-color: #16A34A;
   border-radius: 6px;
   color: #F0FDF4;
-  transition: all 0.3s ease; /* Transição para o hover */
+  transition: all 0.3s ease;
+  /* Transição para o hover */
 }
 .header .header__navbar .start-now-button:hover {
-  background-color: rgb(15.9351351351, 118.0648648649, 53.6); /* Escurece 10% no hover */
+  background-color: rgb(15.9351351351, 118.0648648649, 53.6);
+  /* Escurece 10% no hover */
 }
 
 .hero {
@@ -142,7 +146,8 @@ button {
   justify-content: space-around;
   border-radius: 6px;
   font-weight: 600;
-  transition: all 0.3s ease; /* Transição para o hover */
+  transition: all 0.3s ease;
+  /* Transição para o hover */
 }
 
 .btn-primario {
@@ -151,16 +156,18 @@ button {
   border: none;
 }
 .btn-primario:hover {
-  background-color: rgb(15.9351351351, 118.0648648649, 53.6); /* Escurece 10% no hover */
+  background-color: rgb(15.9351351351, 118.0648648649, 53.6);
 }
 
 .btn-secundario {
   background-color: #F0FDF4;
   color: #2563EB;
-  border: 1px solid #2563EB; /* Borda da cor secundária */
+  border: 1px solid #2563EB;
+  /* Borda da cor secundária */
 }
 .btn-secundario:hover {
-  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429); /* Fundo levemente azul no hover */
+  background-color: rgb(223.8571428571, 232.7142857143, 252.1428571429);
+  /* Fundo levemente azul no hover */
 }
 
 .container__metrics {
@@ -223,13 +230,15 @@ button {
   text-align: center;
 }
 
-h2, p {
+h2,
+p {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 h2 {
+  color: #1F2937;
   font-size: 2rem;
 }
 
@@ -373,18 +382,111 @@ h2 {
   padding: 5px;
 }
 
-.produtos .container__produtos {
-  background-color: #F0FDF4;
+.produtos {
+  display: flex;
+  flex-direction: column;
 }
-.produtos .container__produtos .card__produto {
+.produtos .produtos__h2-p {
+  align-items: center;
+}
+.produtos .produtos__h2-p h2 {
+  color: #1F2937;
+}
+.produtos .container__produtos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 15px;
+  margin: 20px;
+  gap: 20px;
   background-color: #F3F5F8;
 }
-.produtos .container__produtos .card__produto .card__fone button {
+.produtos .frame__fone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produtos .card-fone {
+  justify-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.produtos .card-fone h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.produtos .card-fone p {
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 5px;
+}
+.produtos .card-fone button {
   background-color: #16A34A;
   color: #F0FDF4;
   border: none;
 }
-.produtos .container__produtos .card__produto .card__fone button:hover {
+.produtos .card-fone button:hover {
+  background-color: rgb(15.9351351351, 118.0648648649, 53.6);
+}
+.produtos .frame__notebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produtos .card-notebook {
+  justify-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.produtos .card-notebook h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.produtos .card-notebook p {
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 5px;
+}
+.produtos .card-notebook button {
+  background-color: #16A34A;
+  color: #F0FDF4;
+  border: none;
+}
+.produtos .card-notebook button:hover {
+  background-color: rgb(15.9351351351, 118.0648648649, 53.6);
+}
+.produtos .frame__smartphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produtos .card-smartphone {
+  justify-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.produtos .card-smartphone h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.produtos .card-smartphone p {
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 5px;
+}
+.produtos .card-smartphone button {
+  background-color: #16A34A;
+  color: #F0FDF4;
+  border: none;
+}
+.produtos .card-smartphone button:hover {
   background-color: rgb(15.9351351351, 118.0648648649, 53.6);
 }
 
@@ -436,5 +538,27 @@ h2 {
     justify-content: center;
     padding: 20px;
     gap: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .produtos .container__produtos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .frame__fone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

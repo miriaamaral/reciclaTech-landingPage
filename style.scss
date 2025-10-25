@@ -9,12 +9,14 @@ $cor-subtitulo: #4B5563; // Cinza (Subtítulo / Texto Secundário)
 
 
 // Fontes e tamanhos
-p , a {
+p,
+a {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
 }
@@ -53,9 +55,9 @@ a {
     transition: all 0.3s ease; // Transição para o hover
     color: $cor-subtitulo;
 
-        transition: all 0.3s ease; //Transição para o hover
+    transition: all 0.3s ease; //Transição para o hover
 
-        &:hover {    
+    &:hover {
         color: $cor-primaria; // Muda a cor para a cor primária no hover
     }
 }
@@ -101,13 +103,15 @@ body {
             border-radius: 6px;
             color: $cor-neutra-fundo;
 
-            transition: all 0.3s ease; /* Transição para o hover */
+            transition: all 0.3s ease;
+            /* Transição para o hover */
 
-            &:hover {    
-            background-color: darken($cor-primaria, 10%); /* Escurece 10% no hover */
+            &:hover {
+                background-color: darken($cor-primaria, 10%);
+                /* Escurece 10% no hover */
+            }
         }
     }
-}
 }
 
 // -------------------------------------------------------------------------------------------------------
@@ -119,7 +123,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     .hero-top {
         display: flex;
         flex-direction: column;
@@ -146,7 +150,7 @@ body {
             margin-bottom: 15px;
         }
     }
-    
+
     // Contêiner de Botões: Usa Flexbox para alinhamento horizontal
     .container__hero-buttons {
         display: flex;
@@ -154,7 +158,7 @@ body {
         gap: 15px;
         margin-top: 10px;
     }
-    
+
     // Imagem da Seção
     .hero-image {
         display: flex;
@@ -169,47 +173,50 @@ body {
     }
 }
 
-    // Botões quero doar / adquirir
-    button { 
-        width: 150px;
-        padding: 15px 10px;
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        justify-content: space-around;
-        border-radius: 6px;
-        font-weight: 600;
-        transition: all 0.3s ease; /* Transição para o hover */
-    }
+// Botões quero doar / adquirir
+button {
+    width: 150px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    /* Transição para o hover */
+}
 
-    // 1. Botão Primário (Cor Verde: Doar)
-    .btn-primario {
-        background-color: $cor-primaria;
-        color: $cor-neutra-fundo;
-        border: none;
-        
-        &:hover {    
-        background-color: darken($cor-primaria, 10%); /* Escurece 10% no hover */
+// 1. Botão Primário (Cor Verde: Doar)
+.btn-primario {
+    background-color: $cor-primaria;
+    color: $cor-neutra-fundo;
+    border: none;
+
+    &:hover {
+        background-color: darken($cor-primaria, 10%);
     }
 }
 
-    // 2. Botão Secundário (Cor Azul: Adquirir)
-    .btn-secundario {
-        background-color: $cor-neutra-fundo;
-        color: $cor-secundaria; 
-        border: 1px solid $cor-secundaria; /* Borda da cor secundária */
-        
-        &:hover {
-            background-color: lighten($cor-secundaria, 40%); /* Fundo levemente azul no hover */
-        }
+// 2. Botão Secundário (Cor Azul: Adquirir)
+.btn-secundario {
+    background-color: $cor-neutra-fundo;
+    color: $cor-secundaria;
+    border: 1px solid $cor-secundaria;
+    /* Borda da cor secundária */
+
+    &:hover {
+        background-color: lighten($cor-secundaria, 40%);
+        /* Fundo levemente azul no hover */
     }
-    
+}
+
 
 // -------------------------------------------------------------------------------------------------------
 // MOBILE FIRTS - CONTAINER METRICAS min-375px
 // -------------------------------------------------------------------------------------------------------
 
-.container__metrics{
+.container__metrics {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -220,7 +227,7 @@ body {
     gap: 10px;
 
     background-color: $cor-fundo-caixas;
-    
+
     .eletronicosDoados {
         display: flex;
         flex-direction: column;
@@ -283,195 +290,322 @@ body {
 // -------------------------------------------------------------------------------------------------------
 // MOBILE CONTAINER COMO FUNCIONA min-375px
 // -------------------------------------------------------------------------------------------------------
-h2, p {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+h2,
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-    h2{
-        font-size: 2rem;
-    }
+h2 {
+    color: $cor-titulo;
+    font-size: 2rem;
+}
 
-    .public-box {
+.public-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     width: 100%;
-    }
-    
+}
 
-    // section doar
-    .title-icon-doar {
-        justify-content: flex-start;
-        h2 {color: $cor-titulo;}
-        img {
-            grid-area: auto;
-        }
-        
+
+// section doar
+.title-icon-doar {
+    justify-content: flex-start;
+
+    h2 {
+        color: $cor-titulo;
+    }
+
+    img {
+        grid-area: auto;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__doadores {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 15px;
+    background-color: $cor-fundo-caixas;
+
+    p {
+        font-size: 0.8rem;
+        text-align: start;
+        margin-inline-start: 40px;
+        margin-top: -35px;
+        justify-content: left;
+    }
+
+    .p-formatacao {
+        font-size: 1rem;
+        text-align: start;
+        margin-inline-start: 0px;
+        margin-top: 0px;
+    }
+
+    .cadastre {
         display: flex;
         align-items: center;
-        gap: 15px;
-    }
 
-    .container__doadores {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-        gap: 15px;
-        background-color: $cor-fundo-caixas;
-
-        p {
-                font-size: 0.8rem;
-                text-align: start;
-                margin-inline-start: 40px;
-                margin-top: -35px;
-                justify-content: left;
-            }
-
-        .p-formatacao {
-            font-size: 1rem;
-            text-align: start;
-            margin-inline-start: 0px;
-            margin-top: 0px;
+        h5 {
+            margin-top: -10px;
         }
 
-        .cadastre {
-            display: flex;
-            align-items: center;
-            h5 {
-                margin-top: -10px;
-            }
-            img {
-                padding: 5px;
-            }
-        }
-
-        .aguarde {
-            display: flex;
-            align-items: center;
-            h5 {
-                margin-top: -10px;
-            }
-            img {
-                padding: 5px;
-            }
-        }
-
-        .combine {
-            display: flex;
-            align-items: center;
-            h5 {
-                margin-top: -10px;
-            }
-            img {
-                padding: 5px;
-            }
-        }
-    }
-    
-    // Section adquirir
-    .title-icon-adquirir {
-        justify-content: flex-start;
-        h2 {color: $cor-titulo;}
         img {
-            grid-area: auto;
+            padding: 5px;
         }
+    }
+
+    .aguarde {
         display: flex;
         align-items: center;
-        gap: 15px;
+
+        h5 {
+            margin-top: -10px;
+        }
+
+        img {
+            padding: 5px;
+        }
     }
 
-    .container__adquirentes {
+    .combine {
         display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-        gap: 15px;
-        background-color: $cor-fundo-caixas;
+        align-items: center;
 
-        p {
-                font-size: 0.8rem;
-                text-align: start;
-                margin-inline-start: 40px;
-                margin-top: -35px;
-                justify-content: left;
-            }
-
-        .p-formatacao {
-            font-size: 1rem;
-            text-align: start;
-            margin-inline-start: 0px;
-            margin-top: 0px;
+        h5 {
+            margin-top: -10px;
         }
 
-        .explore {
-            display: flex;
-            align-items: center;
-            h5 {
-                margin-top: -10px;
-            }
-            img {
-                padding: 5px;
-            }
-        }
-
-        .interesse {
-            display: flex;
-            align-items: center;
-            h5 {
-                margin-top: -10px;
-            }
-            img {
-                padding: 5px;
-            }
-        }
-
-        .receba {
-            display: flex;
-            align-items: center;
-            h5 {
-                margin-top: -10px;
-            }
-            img {
-                padding: 5px;
-            }
+        img {
+            padding: 5px;
         }
     }
+}
+
+// Section adquirir
+.title-icon-adquirir {
+    justify-content: flex-start;
+
+    h2 {
+        color: $cor-titulo;
+    }
+
+    img {
+        grid-area: auto;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__adquirentes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 15px;
+    background-color: $cor-fundo-caixas;
+
+    p {
+        font-size: 0.8rem;
+        text-align: start;
+        margin-inline-start: 40px;
+        margin-top: -35px;
+        justify-content: left;
+    }
+
+    .p-formatacao {
+        font-size: 1rem;
+        text-align: start;
+        margin-inline-start: 0px;
+        margin-top: 0px;
+    }
+
+    .explore {
+        display: flex;
+        align-items: center;
+
+        h5 {
+            margin-top: -10px;
+        }
+
+        img {
+            padding: 5px;
+        }
+    }
+
+    .interesse {
+        display: flex;
+        align-items: center;
+
+        h5 {
+            margin-top: -10px;
+        }
+
+        img {
+            padding: 5px;
+        }
+    }
+
+    .receba {
+        display: flex;
+        align-items: center;
+
+        h5 {
+            margin-top: -10px;
+        }
+
+        img {
+            padding: 5px;
+        }
+    }
+}
 
 
 // -------------------------------------------------------------------------------------------------------
 // MOBILE SESSÃO PRODUTOS min-375px
 // -------------------------------------------------------------------------------------------------------
 
-// EM AJUSTES
-.produtos{
+.produtos {
+    display: flex;
+    flex-direction: column;
+
+    .produtos__h2-p {
+        align-items: center;
+        h2 {
+            color: $cor-titulo;
+        }
+    }
 
     .container__produtos {
-        background-color: $cor-neutra-fundo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 15px;
+    margin: 20px;
+    gap: 20px;
+    background-color: $cor-fundo-caixas;
+    }
 
-        .card__produto {
-            background-color: $cor-fundo-caixas;
+    // FRAME FONE DE OUVIDO
+    .frame__fone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-fone {
+        justify-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        h4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+        p {
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        button{
+            background-color: $cor-primaria;
+            color: $cor-neutra-fundo;
+            border: none;
             
-            .card__fone {
+            &:hover {
+                background-color: darken($cor-primaria, 10%);
+            }
+        }
+    }
 
-                button {
-                    background-color: $cor-primaria;
-                    color: $cor-neutra-fundo;
-                    border: none;
-                    
-                    &:hover {    
-                        background-color: darken($cor-primaria, 10%);
-                    }        
+    // FRAME NOTEBOOK
+    .frame__notebook {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card-notebook {
+        justify-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        h4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+        p {
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        button{
+            background-color: $cor-primaria;
+            color: $cor-neutra-fundo;
+            border: none;
+            
+            &:hover {
+                background-color: darken($cor-primaria, 10%);
+            }
+        }
+    }
+
+    //FRAME SMARTPHONE
+    .frame__smartphone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .card-smartphone {
+        justify-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        h4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+        p {
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        button{
+            background-color: $cor-primaria;
+            color: $cor-neutra-fundo;
+            border: none;
+            
+            &:hover {
+                background-color: darken($cor-primaria, 10%);
             }
         }
     }
 }
-}
 
 
 
@@ -487,88 +621,115 @@ h2, p {
 
 
 
-// -------------------------------------------------------------------------------------------------------
-//
-//
-//                                      @MEDIA  SCREEN  DESKTOP
-//                  Estilos para telas maiores que 1024px (notebooks e desktops)
-//
-//
-// -------------------------------------------------------------------------------------------------------
-// DESKTOP - HEADER min-1024px
-// -------------------------------------------------------------------------------------------------------
 
-@media (min-width: 1024px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1106px;
-        margin: auto;
 
-        img {
-            height: 100%;
-        }
 
-        .header__navbar {
-            justify-content: flex-end;
-            gap: 20px;
+    // -------------------------------------------------------------------------------------------------------
+    //
+    //
+    //                                      @MEDIA  SCREEN  DESKTOP
+    //                  Estilos para telas maiores que 1024px (notebooks e desktops)
+    //
+    //
+    // -------------------------------------------------------------------------------------------------------
+    // DESKTOP - HEADER min-1024px
+    // -------------------------------------------------------------------------------------------------------
+
+    @media (min-width: 1024px) {
+        .header {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1106px;
+            margin: auto;
+
+            img {
+                height: 100%;
+            }
+
+            .header__navbar {
+                justify-content: flex-end;
+                gap: 20px;
+            }
         }
     }
-}
+
+    // -------------------------------------------------------------------------------------------------------
+    // DESKTOP - HERO min-1024px
+    // -------------------------------------------------------------------------------------------------------
+    @media (min-width: 1024px) {
+        .hero {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1106px;
+            margin: auto;
 
 
+            .hero-image {
+                justify-content: center;
+                gap: 20px;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    // -------------------------------------------------------------------------------------------------------
+    // DESKTOP - CONTAINER METRICS min-1024px
+    // -------------------------------------------------------------------------------------------------------
+    @media (min-width: 1024px) {
+        .container__metrics {
+            margin-top: 30px;
+            padding: 15px;
+            gap: 50px;
+        }
+    }
+
+    // -------------------------------------------------------------------------------------------------------
+    // DESKTOP - CONTAINER COMO FUNCIONA min-1024px
+    // -------------------------------------------------------------------------------------------------------
+    @media (min-width: 1024px) {
+        .comoFunciona {
+
+            .public-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 20px;
+                gap: 35px;
+            }
+        }
+    }
+
 // -------------------------------------------------------------------------------------------------------
-// DESKTOP - HERO min-1024px
+// DESKTOP - CONTAINER PRODUTOS min-1024px
 // -------------------------------------------------------------------------------------------------------
-@media (min-width: 1024px) {
-    .hero {
-        margin-top: 30px;
+    @media (min-width: 1024px) {
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container__produtos {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        max-width: 1106px;
-        margin: auto;
-        
-
-        .hero-image {
-            justify-content: center;
-            gap: 20px;
-        }
-
-        img {
-            height: 100%;
-        }
-    }
-
-}
-
-
-// -------------------------------------------------------------------------------------------------------
-// DESKTOP - CONTAINER METRICS min-1024px
-// -------------------------------------------------------------------------------------------------------
-@media (min-width: 1024px) {
-    .container__metrics {
-        margin-top: 30px;
-        padding: 15px;
-        gap: 50px;
-    }
-}
-
-
-// -------------------------------------------------------------------------------------------------------
-// DESKTOP - CONTAINER COMO FUNCIONA min-1024px
-// -------------------------------------------------------------------------------------------------------
-@media (min-width: 1024px) {
-.comoFunciona{
-
-    .public-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         padding: 20px;
-        gap: 35px;
+        margin-top: 20px;
     }
-}
+    }
+
+    .frame__fone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
