@@ -373,6 +373,21 @@ h2 {
   padding: 5px;
 }
 
+.produtos .container__produtos {
+  background-color: #F0FDF4;
+}
+.produtos .container__produtos .card__produto {
+  background-color: #F3F5F8;
+}
+.produtos .container__produtos .card__produto .card__fone button {
+  background-color: #16A34A;
+  color: #F0FDF4;
+  border: none;
+}
+.produtos .container__produtos .card__produto .card__fone button:hover {
+  background-color: rgb(15.9351351351, 118.0648648649, 53.6);
+}
+
 @media (min-width: 1024px) {
   .header {
     flex-direction: row;

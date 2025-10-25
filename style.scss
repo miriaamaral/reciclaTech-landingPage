@@ -374,7 +374,6 @@ h2, p {
     }
     
     // Section adquirir
-
     .title-icon-adquirir {
         justify-content: flex-start;
         h2 {color: $cor-titulo;}
@@ -445,9 +444,34 @@ h2, p {
     }
 
 
+// -------------------------------------------------------------------------------------------------------
+// MOBILE SESSÃO PRODUTOS min-375px
+// -------------------------------------------------------------------------------------------------------
 
+// EM AJUSTES
+.produtos{
 
+    .container__produtos {
+        background-color: $cor-neutra-fundo;
 
+        .card__produto {
+            background-color: $cor-fundo-caixas;
+            
+            .card__fone {
+
+                button {
+                    background-color: $cor-primaria;
+                    color: $cor-neutra-fundo;
+                    border: none;
+                    
+                    &:hover {    
+                        background-color: darken($cor-primaria, 10%);
+                    }        
+            }
+        }
+    }
+}
+}
 
 
 
