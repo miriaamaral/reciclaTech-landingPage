@@ -6,6 +6,7 @@ $cor-fundo-caixas: #F3F5F8; // Fundo das Caixas (Ex: Cards - azul claro)
 $cor-titulo: #1F2937; // Cinza Escuro (Título / Cor corpo Texto Principal)
 $cor-texto: #4B5563; // Preto (Texto menor dentro dos cards)
 $cor-subtitulo: #4B5563; // Cinza (Subtítulo / Texto Secundário)
+$cord-borda-cards: #9CA3AF; // Cinza claro para contorno das bordas dos cards-feedbacks
 
 
 // Fontes e tamanhos
@@ -616,6 +617,154 @@ h2 {
     }
 }
 
+// -------------------------------------------------------------------------------------------------------
+// MOBILE SESSÃO FEEDBACK min-375px
+// -------------------------------------------------------------------------------------------------------
+.container__feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .feedback__h2-p {
+        justify-content: center;
+
+        h2, p {
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       }
+    }
+
+    h2 {
+            color: $cor-titulo;
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        // card da avaliação do João - modelo para o da Maria e o da Ana
+    .card__avaliacao-joao {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 15px;
+        margin: 20px;
+        gap: 20px;
+        border: 2px solid $cord-borda-cards;
+        border-radius: 10px;
+        max-width: 290px;
+
+        img {
+            min-width: 9rem;
+            max-width: 9rem;
+        }
+    }
+
+    .usuario-joao {
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+    h2 {
+        color: $cor-titulo; // cor do titulo em uma variavel - pode reutilizar
+    }
+
+    h5, p {
+        font-size: 0.90rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    img {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+    }
+    }
+
+    // card da avaliação da Maria
+    .card__avaliacao-maria {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 15px;
+        margin: 20px;
+        gap: 20px;
+        border: 2px solid $cord-borda-cards;
+        border-radius: 10px;
+        max-width: 290px;
+
+        img {
+            min-width: 9rem;
+            max-width: 9rem;
+        }
+    }
+
+    .usuario-maria {
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+    h2 {
+        color: $cor-titulo;
+    }
+
+    h5, p {
+        font-size: 0.90rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    img {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+    }
+    }
+
+    // card da avaliação da Ana
+    .card__avaliacao-ana {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 15px;
+        margin: 20px;
+        gap: 20px;
+        border: 2px solid $cord-borda-cards;
+        border-radius: 10px;
+        max-width: 290px;
+
+        img {
+            min-width: 9rem;
+            max-width: 9rem;
+        }
+    }
+
+    .usuario-ana {
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+    h2 {
+        color: $cor-titulo; 
+    }
+
+    h5, p {
+        font-size: 0.90rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    img {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+    }
+    }
+}
 
 
 
@@ -742,3 +891,7 @@ h2 {
         margin-right: 40px;
     }
 }
+
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - SESSÃO FEEDBACK min-1024px
+// -------------------------------------------------------------------------------------------------------

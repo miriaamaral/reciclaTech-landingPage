@@ -495,6 +495,128 @@ h2 {
   background-color: rgb(15.9351351351, 118.0648648649, 53.6);
 }
 
+.container__feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container__feedback .feedback__h2-p {
+  justify-content: center;
+}
+.container__feedback .feedback__h2-p h2, .container__feedback .feedback__h2-p p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container__feedback h2 {
+  color: #1F2937;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.container__feedback .card__avaliacao-joao {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 15px;
+  margin: 20px;
+  gap: 20px;
+  border: 2px solid #9CA3AF;
+  border-radius: 10px;
+  max-width: 290px;
+}
+.container__feedback .card__avaliacao-joao img {
+  min-width: 9rem;
+  max-width: 9rem;
+}
+.container__feedback .usuario-joao {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container__feedback .usuario-joao h2 {
+  color: #1F2937;
+}
+.container__feedback .usuario-joao h5, .container__feedback .usuario-joao p {
+  font-size: 0.9rem;
+  text-align: center;
+  justify-items: center;
+}
+.container__feedback .usuario-joao img {
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+}
+.container__feedback .card__avaliacao-maria {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 15px;
+  margin: 20px;
+  gap: 20px;
+  border: 2px solid #9CA3AF;
+  border-radius: 10px;
+  max-width: 290px;
+}
+.container__feedback .card__avaliacao-maria img {
+  min-width: 9rem;
+  max-width: 9rem;
+}
+.container__feedback .usuario-maria {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container__feedback .usuario-maria h2 {
+  color: #1F2937;
+}
+.container__feedback .usuario-maria h5, .container__feedback .usuario-maria p {
+  font-size: 0.9rem;
+  text-align: center;
+  justify-items: center;
+}
+.container__feedback .usuario-maria img {
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+}
+.container__feedback .card__avaliacao-ana {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 15px;
+  margin: 20px;
+  gap: 20px;
+  border: 2px solid #9CA3AF;
+  border-radius: 10px;
+  max-width: 290px;
+}
+.container__feedback .card__avaliacao-ana img {
+  min-width: 9rem;
+  max-width: 9rem;
+}
+.container__feedback .usuario-ana {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container__feedback .usuario-ana h2 {
+  color: #1F2937;
+}
+.container__feedback .usuario-ana h5, .container__feedback .usuario-ana p {
+  font-size: 0.9rem;
+  text-align: center;
+  justify-items: center;
+}
+.container__feedback .usuario-ana img {
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+}
+
 @media (min-width: 1024px) {
   .header {
     flex-direction: row;
