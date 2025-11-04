@@ -16,8 +16,7 @@ a {
     font-size: 1rem;
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
 }
@@ -617,6 +616,7 @@ h2 {
     }
 }
 
+
 // -------------------------------------------------------------------------------------------------------
 // MOBILE SESSÃO FEEDBACK min-375px
 // -------------------------------------------------------------------------------------------------------
@@ -624,6 +624,16 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    .card__avaliacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        width: 95%;
+    }
 
     .feedback__h2-p {
         justify-content: center;
@@ -637,7 +647,7 @@ h2 {
 
     h2 {
             color: $cor-titulo;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -656,6 +666,8 @@ h2 {
         border: 2px solid $cord-borda-cards;
         border-radius: 10px;
         max-width: 290px;
+        min-height: 265px;
+        max-height: 265px;
 
         img {
             min-width: 9rem;
@@ -696,6 +708,8 @@ h2 {
         border: 2px solid $cord-borda-cards;
         border-radius: 10px;
         max-width: 290px;
+        min-height: 265px;
+        max-height: 265px;
 
         img {
             min-width: 9rem;
@@ -736,6 +750,8 @@ h2 {
         border: 2px solid $cord-borda-cards;
         border-radius: 10px;
         max-width: 290px;
+        min-height: 265px;
+        max-height: 265px;
 
         img {
             min-width: 9rem;
@@ -748,6 +764,7 @@ h2 {
         display: flex;
         align-items: center;
         gap: 15px;
+        padding-top: 22px;
 
     h2 {
         color: $cor-titulo; 
@@ -760,8 +777,8 @@ h2 {
     }
 
     img {
-        min-width: 2.5rem;
-        max-width: 2.5rem;
+        min-width: 2.3rem; // ficou um pouco maior na formatação que coloquie pro do João e da Maria, ajustei no olhometro
+        max-width: 2.3rem;
     }
     }
 }
@@ -895,3 +912,23 @@ h2 {
 // -------------------------------------------------------------------------------------------------------
 // DESKTOP - SESSÃO FEEDBACK min-1024px
 // -------------------------------------------------------------------------------------------------------
+
+// agora vou ajustar o media apra 1024px e o h2 vai ter um tamanho maoior de 1.9rem e os cards de feedbacks vao ficar em linha
+@media (min-width: 1024px) {
+    .container__feedback .card__avaliacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+    .card__avaliacoes {
+        width: 95%;
+    }
+
+    .card__avaliacao-joao .card__avaliacao-maria .card__avaliacao-ana {
+        max-width: 300px;
+        max-height: 900px;
+    }
+}
