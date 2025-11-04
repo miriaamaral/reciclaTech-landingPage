@@ -16,9 +16,14 @@ a {
     font-size: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
+    color: $cor-titulo;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
 }
 
 h3 {
@@ -115,7 +120,7 @@ body {
 }
 
 // -------------------------------------------------------------------------------------------------------
-// MOBILE FIRTS - HERO min-375px
+// MOBILE FIRTS - SECTION HERO min-375px
 // -------------------------------------------------------------------------------------------------------
 
 .hero {
@@ -475,7 +480,7 @@ h2 {
 
 
 // -------------------------------------------------------------------------------------------------------
-// MOBILE SESSÃO PRODUTOS min-375px
+// MOBILE SECTION PRODUTOS min-375px
 // -------------------------------------------------------------------------------------------------------
 
 .produtos {
@@ -487,7 +492,7 @@ h2 {
 
         h2 {
             color: $cor-titulo;
-            font-size: 1.9rem;
+            font-size: 2rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -618,7 +623,7 @@ h2 {
 
 
 // -------------------------------------------------------------------------------------------------------
-// MOBILE SESSÃO FEEDBACK min-375px
+// MOBILE SECTION FEEDBACK min-375px
 // -------------------------------------------------------------------------------------------------------
 .container__feedback {
     display: flex;
@@ -638,24 +643,17 @@ h2 {
     .feedback__h2-p {
         justify-content: center;
 
-        h2, p {
-        display: flex;
-       flex-direction: row;
-       justify-content: center;
-       }
-    }
-
-    h2 {
-            color: $cor-titulo;
-            font-size: 1.5rem;
+        h2,
+        p {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: center;
-            padding: 15px;
+            text-align: center;
         }
+    }
 
-        // card da avaliação do João - modelo para o da Maria e o da Ana
+
+    // card da avaliação do João - modelo para o da Maria e o da Ana
     .card__avaliacao-joao {
         display: flex;
         flex-direction: column;
@@ -669,6 +667,9 @@ h2 {
         min-height: 265px;
         max-height: 265px;
 
+        // esta com borda, mas se eu quiser adiconar a lateral esquerda da borda mais grossa eu posso usar: 
+        border-left: 4px solid $cord-borda-cards;
+
         img {
             min-width: 9rem;
             max-width: 9rem;
@@ -681,20 +682,21 @@ h2 {
         align-items: center;
         gap: 15px;
 
-    h2 {
-        color: $cor-titulo; // cor do titulo em uma variavel - pode reutilizar
-    }
+        h2 {
+            color: $cor-titulo; // cor do titulo em uma variavel - pode reutilizar
+        }
 
-    h5, p {
-        font-size: 0.90rem;
-        text-align: center;
-        justify-items: center;
-    }
+        h5,
+        p {
+            font-size: 0.90rem;
+            text-align: center;
+            justify-items: center;
+        }
 
-    img {
-        min-width: 2.5rem;
-        max-width: 2.5rem;
-    }
+        img {
+            min-width: 2.5rem;
+            max-width: 2.5rem;
+        }
     }
 
     // card da avaliação da Maria
@@ -711,6 +713,8 @@ h2 {
         min-height: 265px;
         max-height: 265px;
 
+        border-left: 4px solid $cord-borda-cards;
+
         img {
             min-width: 9rem;
             max-width: 9rem;
@@ -723,20 +727,21 @@ h2 {
         align-items: center;
         gap: 15px;
 
-    h2 {
-        color: $cor-titulo;
-    }
+        h2 {
+            color: $cor-titulo;
+        }
 
-    h5, p {
-        font-size: 0.90rem;
-        text-align: center;
-        justify-items: center;
-    }
+        h5,
+        p {
+            font-size: 0.90rem;
+            text-align: center;
+            justify-items: center;
+        }
 
-    img {
-        min-width: 2.5rem;
-        max-width: 2.5rem;
-    }
+        img {
+            min-width: 2.5rem;
+            max-width: 2.5rem;
+        }
     }
 
     // card da avaliação da Ana
@@ -753,6 +758,8 @@ h2 {
         min-height: 265px;
         max-height: 265px;
 
+        border-left: 4px solid $cord-borda-cards;
+
         img {
             min-width: 9rem;
             max-width: 9rem;
@@ -766,22 +773,89 @@ h2 {
         gap: 15px;
         padding-top: 22px;
 
-    h2 {
-        color: $cor-titulo; 
-    }
+        h2 {
+            color: $cor-titulo;
+        }
 
-    h5, p {
-        font-size: 0.90rem;
-        text-align: center;
-        justify-items: center;
-    }
+        h5,
+        p {
+            font-size: 0.90rem;
+            text-align: center;
+            justify-items: center;
+        }
 
-    img {
-        min-width: 2.3rem; // ficou um pouco maior na formatação que coloquie pro do João e da Maria, ajustei no olhometro
-        max-width: 2.3rem;
-    }
+        img {
+            min-width: 2.3rem; // ficou um pouco maior na formatação que coloquie pro do João e da Maria, ajustei no olhometro
+            max-width: 2.3rem;
+        }
     }
 }
+
+// -------------------------------------------------------------------------------------------------------
+// MOBILE SECTION CALL-TO-ACTION min-375px
+// -------------------------------------------------------------------------------------------------------
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    background-color: $cor-neutra-fundo;
+
+    h2 {
+        color: $cor-titulo;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container__cta-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    }
+
+
+
+// -------------------------------------------------------------------------------------------------------
+// MOBILE FOOTER min-375px
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -830,7 +904,7 @@ h2 {
 }
 
 // -------------------------------------------------------------------------------------------------------
-// DESKTOP - HERO min-1024px
+// DESKTOP - SECTION HERO min-1024px
 // -------------------------------------------------------------------------------------------------------
 @media (min-width: 1024px) {
     .hero {
@@ -882,9 +956,10 @@ h2 {
 }
 
 // -------------------------------------------------------------------------------------------------------
-// DESKTOP - CONTAINER PRODUTOS min-1024px
+// DESKTOP - SECTION PRODUTOS min-1024px
 // -------------------------------------------------------------------------------------------------------
 @media (min-width: 1024px) {
+
     .produtos {
         display: flex;
         flex-direction: column;
@@ -900,6 +975,11 @@ h2 {
         }
     }
 
+    .container__feedback h2 {
+        align-items: center;
+        font-size: 2rem;
+    }
+
     .frame__fone {
         display: flex;
         flex-direction: column;
@@ -910,25 +990,27 @@ h2 {
 }
 
 // -------------------------------------------------------------------------------------------------------
-// DESKTOP - SESSÃO FEEDBACK min-1024px
+// DESKTOP - SECTION FEEDBACK min-1024px
 // -------------------------------------------------------------------------------------------------------
 
-// agora vou ajustar o media apra 1024px e o h2 vai ter um tamanho maoior de 1.9rem e os cards de feedbacks vao ficar em linha
 @media (min-width: 1024px) {
     .container__feedback .card__avaliacoes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 15px;
-}
-
-    .card__avaliacoes {
-        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 15px;
     }
 
-    .card__avaliacao-joao .card__avaliacao-maria .card__avaliacao-ana {
-        max-width: 300px;
-        max-height: 900px;
-    }
 }
+
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - SECTION CALL-TO-ACTION min-1024px
+// -------------------------------------------------------------------------------------------------------
+
+// já deixei fomatado para desktop no código mobile-first acima, está responsivel para ambos.
+
+
+// -------------------------------------------------------------------------------------------------------
+// DESKTOP - FOOTER min-1024px
+// -------------------------------------------------------------------------------------------------------
