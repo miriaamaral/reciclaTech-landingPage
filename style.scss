@@ -663,9 +663,9 @@ h2 {
         gap: 20px;
         border: 2px solid $cord-borda-cards;
         border-radius: 10px;
-        max-width: 290px;
-        min-height: 265px;
-        max-height: 265px;
+        max-width: 300px;
+        min-height: 280px;
+        max-height: 280px;
 
         // esta com borda, mas se eu quiser adiconar a lateral esquerda da borda mais grossa eu posso usar: 
         border-left: 4px solid $cord-borda-cards;
@@ -701,7 +701,7 @@ h2 {
 
     // card da avaliação da Maria
     .card__avaliacao-maria {
-        display: flex;
+     display: flex;
         flex-direction: column;
         justify-items: center;
         padding: 15px;
@@ -709,10 +709,11 @@ h2 {
         gap: 20px;
         border: 2px solid $cord-borda-cards;
         border-radius: 10px;
-        max-width: 290px;
-        min-height: 265px;
-        max-height: 265px;
+        max-width: 300px;
+        min-height: 280px;
+        max-height: 280px;
 
+        // esta com borda, mas se eu quiser adiconar a lateral esquerda da borda mais grossa eu posso usar: 
         border-left: 4px solid $cord-borda-cards;
 
         img {
@@ -728,7 +729,7 @@ h2 {
         gap: 15px;
 
         h2 {
-            color: $cor-titulo;
+            color: $cor-titulo; // cor do titulo em uma variavel - pode reutilizar
         }
 
         h5,
@@ -746,7 +747,7 @@ h2 {
 
     // card da avaliação da Ana
     .card__avaliacao-ana {
-        display: flex;
+         display: flex;
         flex-direction: column;
         justify-items: center;
         padding: 15px;
@@ -754,10 +755,11 @@ h2 {
         gap: 20px;
         border: 2px solid $cord-borda-cards;
         border-radius: 10px;
-        max-width: 290px;
-        min-height: 265px;
-        max-height: 265px;
+        max-width: 300px;
+        min-height: 280px;
+        max-height: 280px;
 
+        // esta com borda, mas se eu quiser adiconar a lateral esquerda da borda mais grossa eu posso usar: 
         border-left: 4px solid $cord-borda-cards;
 
         img {
@@ -771,10 +773,9 @@ h2 {
         display: flex;
         align-items: center;
         gap: 15px;
-        padding-top: 22px;
 
         h2 {
-            color: $cor-titulo;
+            color: $cor-titulo; // cor do titulo em uma variavel - pode reutilizar
         }
 
         h5,
@@ -785,8 +786,8 @@ h2 {
         }
 
         img {
-            min-width: 2.3rem; // ficou um pouco maior na formatação que coloquie pro do João e da Maria, ajustei no olhometro
-            max-width: 2.3rem;
+            min-width: 2.5rem;
+            max-width: 2.5rem;
         }
     }
 }

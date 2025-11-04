@@ -532,9 +532,9 @@ h2 {
   gap: 20px;
   border: 2px solid #9CA3AF;
   border-radius: 10px;
-  max-width: 290px;
-  min-height: 265px;
-  max-height: 265px;
+  max-width: 300px;
+  min-height: 280px;
+  max-height: 280px;
   border-left: 4px solid #9CA3AF;
 }
 .container__feedback .card__avaliacao-joao img {
@@ -569,9 +569,9 @@ h2 {
   gap: 20px;
   border: 2px solid #9CA3AF;
   border-radius: 10px;
-  max-width: 290px;
-  min-height: 265px;
-  max-height: 265px;
+  max-width: 300px;
+  min-height: 280px;
+  max-height: 280px;
   border-left: 4px solid #9CA3AF;
 }
 .container__feedback .card__avaliacao-maria img {
@@ -606,9 +606,9 @@ h2 {
   gap: 20px;
   border: 2px solid #9CA3AF;
   border-radius: 10px;
-  max-width: 290px;
-  min-height: 265px;
-  max-height: 265px;
+  max-width: 300px;
+  min-height: 280px;
+  max-height: 280px;
   border-left: 4px solid #9CA3AF;
 }
 .container__feedback .card__avaliacao-ana img {
@@ -620,7 +620,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-top: 22px;
 }
 .container__feedback .usuario-ana h2 {
   color: #1F2937;
@@ -632,8 +631,8 @@ h2 {
   justify-items: center;
 }
 .container__feedback .usuario-ana img {
-  min-width: 2.3rem;
-  max-width: 2.3rem;
+  min-width: 2.5rem;
+  max-width: 2.5rem;
 }
 
 .call-to-action {
